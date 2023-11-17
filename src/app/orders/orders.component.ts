@@ -4,11 +4,11 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-orders',
+  templateUrl: './orders.component.html',
+  styleUrls: ['./orders.component.css']
 })
-export class LoginComponent {
+export class OrdersComponent {
   showModal: boolean = false;
   registerForm: FormGroup;
   submitted = false;

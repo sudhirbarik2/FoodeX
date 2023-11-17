@@ -4,14 +4,16 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class LoginComponent {
+export class RegisterComponent {
   showModal: boolean = false;
   registerForm: FormGroup;
   submitted = false;
+  isChecked=false;
+  userType='Register as an user';
   constructor(private formBuilder: FormBuilder,private activatedRoute: ActivatedRoute,private router: Router) {  }
   show() {
     this.showModal = true; // Show-Hide Modal Check
@@ -31,6 +33,12 @@ export class LoginComponent {
       password: ''
     });
   }
+  checkValue(event: any){
+    console.log(event);
+    this.isChecked=! this.isChecked;
+    if(event=='A') this.userType="Register as an user"
+    else this.userType="Register as an admin"
+ }
   // convenience getter for easy access to form fields
   get f() { return this.registerForm.controls; }
   onSubmit() {

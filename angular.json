@@ -26,9 +26,11 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "https://cdn.jsdelivr.net/npm/angular-bootstrap-toggle@0.4.2/dist/angular-bootstrap-toggle.min.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"]
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js",
+          "https://cdn.jsdelivr.net/npm/angular-bootstrap-toggle@0.4.2/dist/angular-bootstrap-toggle.min.js"]
           },
           "configurations": {
             "production": {
