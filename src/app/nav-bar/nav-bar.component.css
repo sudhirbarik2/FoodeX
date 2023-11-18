@@ -1,6 +1,7 @@
   /*--------------------------------------------------------------
   # Top Bar
   --------------------------------------------------------------*/
+  
   #topbar {
     height: 40px;
     font-size: 14px;
@@ -99,6 +100,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     transition: 0.3s;
+    text-decoration:none;
   }
   
   .book-a-table-btn:hover {
@@ -253,5 +255,12 @@
     margin: 15px;
   }
 
+.cartIconStyle{
+    background:url('../../assets/img/cart.png') no-repeat 0 0;
+}
+
+.cartIconStyle:hover{
+    background:url('../../assets/img/cartHover.png') no-repeat 0 0;
+}
   
   
