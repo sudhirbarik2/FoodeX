@@ -56,10 +56,24 @@
                         <div class="slider-main">
                             <!-- <img src="../../assets/offer1.png" alt="Offer"> -->
                             <a href="#" class="card-link" style="margin-top: 14rem;">
-                                <div class="card cardStyle" *ngFor='let in of currentMenu;let i = index'>
-                                    <div class="cardbodystyle">
-                                        <button type="button" class="btn btn-lg btn-primary" disabled>Order now</button>
-                                    </div>
+                                <div class="card cardStyle" *ngFor='let food of currentMenu;let i = index'>
+                                    <!-- Card style -->
+                                        <img class="card-img-top cardimageStyle" src={{food.imglink}} alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Food</h5>
+                                            <p class="card-text"><b>Price: 100</b></p>
+                                            <a href="#" class="btn addToCardStyle text-center book-a-table-btn">Add</a>
+                                          </div>
+                                        <!-- <div class="card-body">
+                                          <h5 class="card-title">Dal vat choka</h5>
+                                        </div>
+                                        <ul class="list-group-flush">
+                                          <li class="list-group-item"><b>Price:100</b></li>
+                                        </ul>
+                                        <div class="card-body addToCardStyle text-center book-a-table-btn " >
+                                          <a href="#" class="card-link">Add</a>
+                                        </div> -->
+                                      
                                 </div>
                             </a>
                         </div>

@@ -6,28 +6,78 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-  currentMenu : any=[1,2,3,4,5,6,7,8]
+  currentMenu : any=[
+    {imglink:'../../assets/img/specials-1.png'},
+    {imglink:'../../assets/img/specials-2.png'},
+    {imglink:'../../assets/img/specials-3.png'},
+    {imglink:'../../assets/img/specials-4.png'},
+    {imglink:'../../assets/img/specials-5.png'},
+    {imglink:'../../assets/img/specials-1.png'},
+    {imglink:'../../assets/img/specials-1.png'},
+    {imglink:'../../assets/img/specials-1.png'},
+    {imglink:'../../assets/img/specials-1.png'}
+  ]
   fetchMenu(foodType: string){
     if(foodType==='all'){
-      this.currentMenu=[1,2,3,4,5,6,7,8]
+      this.currentMenu=[
+        {imglink:'../../assets/img/specials-4.png'},
+        {imglink:'../../assets/img/specials-5.png'},
+        {imglink:'../../assets/img/specials-2.png'},
+        {imglink:'../../assets/img/specials-1.png'},
+        {imglink:'../../assets/img/specials-3.png'},
+        {imglink:'../../assets/img/specials-1.png'},
+        {imglink:'../../assets/img/specials-1.png'},
+        {imglink:'../../assets/img/specials-1.png'},
+        {imglink:'../../assets/img/specials-1.png'}
+      ]
     }
     else if(foodType==='starter'){
-      this.currentMenu=[1,2]
+      this.currentMenu=[
+        {imglink:'../../assets/img/specials-2.png'},
+        {imglink:'../../assets/img/specials-4.png'},
+        {imglink:'../../assets/img/specials-5.png'}
+      ]
     }
     else if(foodType==='veg'){
-      this.currentMenu=[8]
+      this.currentMenu=[
+        {imglink:'../../assets/img/specials-2.png'},
+        {imglink:'../../assets/img/specials-4.png'}
+      ]
     }
     else if(foodType==='nonVeg'){
-      this.currentMenu=[1,2,3]
+      this.currentMenu=[
+        {imglink:'../../assets/img/specials-3.png'},
+        {imglink:'../../assets/img/specials-2.png'},
+        {imglink:'../../assets/img/specials-5.png'},
+        {imglink:'../../assets/img/specials-1.png'}
+      ]
     }
     else if(foodType==='pnb'){
-      this.currentMenu=[1,2,3,4]
+      this.currentMenu=[
+        {imglink:'../../assets/img/specials-5.png'}
+      ]
     }
     else if(foodType==='salad'){
-      this.currentMenu=[1,2,3,4,5,]
+      this.currentMenu=[
+        {imglink:'../../assets/img/specials-1.png'},
+        {imglink:'../../assets/img/specials-2.png'},
+        {imglink:'../../assets/img/specials-3.png'},
+        {imglink:'../../assets/img/specials-4.png'},
+        {imglink:'../../assets/img/specials-5.png'},
+        {imglink:'../../assets/img/specials-6.png'},
+        {imglink:'../../assets/img/specials-1.png'},
+        {imglink:'../../assets/img/specials-2.png'}
+      ]
     }
     else {
-      this.currentMenu=[1,2,3,4,5,6]
+      this.currentMenu=[
+        {imglink:'../../assets/img/specials-6.png'},
+        {imglink:'../../assets/img/specials-5.png'},
+        {imglink:'../../assets/img/specials-4.png'},
+        {imglink:'../../assets/img/specials-3.png'},
+        {imglink:'../../assets/img/specials-2.png'},
+        {imglink:'../../assets/img/specials-1.png'}
+      ]
     }
   }
 }
